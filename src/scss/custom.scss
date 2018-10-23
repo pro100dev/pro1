@@ -1,0 +1,461 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+
+// -----------------------Navbar----------------------\\
+
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0.03rem;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.btn {
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1.313rem 2.12rem 1.188rem;
+    letter-spacing: 0.1rem;
+}
+
+
+// -----------------------HERO Section----------------------\\
+
+.btn-light-muted {
+    color: #bbbdc2;
+}
+.btn-light-muted:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.btn-outline-light {
+    border: 2px solid;
+}
+
+.paralax-hero { 
+    background-image: url("../img/hero-img.png");
+
+    min-height: 500px;
+    height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    height: 100%;
+}
+
+.pre-line {
+    margin-top: 0.6rem;
+    height: 1px;
+    width: 24px;
+    background-color: #fff;
+}
+
+.content-title {
+    letter-spacing: 0.06rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.display-header {
+    font-weight: 500;
+    font-size: 3.75rem;
+    line-height: 1.2;
+}
+
+
+// -----------------------WHY CHOSE US Section----------------------\\
+
+.why-chose-us {
+    background-image: url("../img/why-chose-us.png");
+
+    min-height: 600px;
+    height: 100vh; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-chose-text {
+    max-width: 430px;
+}
+
+// -----------------------FEATURES Section----------------------\\
+
+.features {
+    background-image: -moz-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: -webkit-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: -ms-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+}
+
+.features-list {
+    margin-top: 54px;
+    .col {
+        div {
+            margin-top: 36px;
+        }
+    }
+}
+
+.icon-box {
+    height: 64px;
+    width: 50%;
+    max-width: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    img {
+        padding: 20px 21px;
+    }
+}
+
+.icon-content {
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+.features-slider {
+    margin-top: 80px;
+    margin-bottom: -60px;
+    img {
+        max-width: 100%;
+    }
+    position: relative;
+    border-radius: 4px;
+}
+
+.f-slider-bg {
+    background: url("../img/features_slider_bg.png") no-repeat;
+    background-position: center 60px;
+    background-size: auto 100%;
+}
+
+
+/* Next & previous buttons */
+.slick-prev, .slick-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 11px 18px;
+  color: $white !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.slick-next {
+  right: -60px;
+  padding-left: 20px;
+}
+.slick-prev {
+    left: -60px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slick-prev:hover, .slick-next:hover {
+  background-color: $primary;
+}
+
+
+// -----------------------TESTIMONIALS Section----------------------\\
+
+.testimonials {
+    .hero-content {
+        margin-top: 125px;
+    }
+}
+.testimonial-box {
+    max-width: 400px;
+}
+
+.testimonial-content {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: $secondary;
+    span {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 3rem;
+        color: $primary;
+        opacity: 0.2;
+        font-style: normal;
+        line-height: 0.1;
+    }
+}
+
+.testimonial-source-block {
+    img {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+    }
+
+}
+
+.testimonial-source-content {
+    margin: 10px 16px;
+    margin-bottom: 0;
+    letter-spacing: 0.05rem;
+    h6 {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    color: #9fa4af;
+    font-style: normal;
+}
+
+.slick-dots  {
+    margin-top: 12px;
+    display: flex;
+    list-style: none;
+    button {
+        margin-right: 12px;
+        text-indent: -9999px;
+        padding: 0;
+        overflow:hidden;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #e2daf9;
+        border: none;
+        outline: inherit;
+        &:hover {
+            background-color: $gray-500;
+            cursor: pointer;
+            transition: 0.7s ease all;
+        }
+    }
+
+    .slick-active {
+        button {
+            background-color: $primary;
+            transition: 0.7s ease all;
+        }
+    }
+}
+
+.testimonial-video {
+    max-width: 617px;
+    width: 100%;
+    max-height: 430px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    background-image: url('../img/testimon-video-prew.png');
+        .testimonial_video_mask {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+            border-radius: 12px;
+        }
+        .testimonials_video_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: $primary;
+            &:hover {
+                background-color: $red;
+                transition: 0.7s ease all;
+            }
+        }
+}
+
+
+// -----------------------About US Section----------------------\\
+
+.about_us {
+    margin-top: 125px;
+    background-image: url("../img/about_us_bg.png");
+
+    min-height: 600px;
+    height: 100vh; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+// -----------------------OUR Team Section----------------------\\
+
+.our_team {
+    .container-fluid {
+        max-width: 1450px;
+    }
+
+    .our_team_item {
+        img {
+            display: flex;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+
+    .our_team_item_title {
+        text-align: center;
+    }
+
+    .our_team_item_title {
+        h5 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        color: #9fa4af;
+        margin-top: 1rem;
+    }
+}
+
+
+// -----------------------Recent Articles(Home) Section----------------------\\
+
+.home_blog {
+    margin-top: 125px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #f9fafc;
+    .blog-card {
+        width: 570px;
+        background-color: #fff;
+        margin: 24px 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 24.6px 5.4px rgba(204, 204, 223, 0.3);
+        p {
+            color: #9fa4af;
+        }
+        a {
+            color: $secondary;
+        }
+        .blog-card-img {
+            background-image: url('../img/blog-card-img.png');
+            min-width: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px 0 0 10px;
+            
+        }
+        .blog-card-box {
+            padding: 40px;
+        }
+        .blog-card-title {
+            max-height: 36px;
+            overflow: hidden;
+        }
+        .blog-card-comments {
+            display: flex;
+            align-items: center;
+            font-size: 0.813rem;
+            margin-bottom: 0;
+        }
+        .blog-card-date {
+            font-size: 0.813rem;
+        }
+        .pre-line {
+            margin: 29px 0;
+            width: 70px;
+        }
+        .blog-card-content {
+            line-height: 1.8;
+            max-height: 84px;
+            overflow: hidden;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+    }
+
+    .blog-card-source-avatar {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+
+// -----------------------CTA Section----------------------\\
+
+.call_to_action {
+    background-image: url("../img/cta-img.png");
+
+    min-height: 700px;
+    height: 100vh; 
+    max-height: 1080px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        padding-top: 125px;
+    }
+}
+.cite-footer {
+    .navbar {
+        position: relative;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.07);
+    }
+    .footer-copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem;
+        p {
+            margin: 0;
+            color: #6a6a77;
+        }
+        i {
+            color: #bdbdc2;
+            margin-left: 1rem;
+            &:hover {
+                cursor: pointer;
+                color: #000;
+                transition: 0.7s ease all;
+            }
+        }
+    }
+}
